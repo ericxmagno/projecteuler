@@ -2,7 +2,7 @@ import time
 import math
 
 def main():
-    n = 600851475143
+    n = 63
 
     primefactor(n)
 
@@ -13,13 +13,14 @@ def primefactor(n):
         factors.add(2)
         n/=2
     i = 3
-    while i <= math.sqrt(n):
+    print(n)
+    while i <= n:
         if n%i==0:
             factors.add(i)
             n/=i
             i = 3
+            continue
         i+=2
-    factors.add(int(n))
     print(sorted(factors))
     print(max(factors))
 
