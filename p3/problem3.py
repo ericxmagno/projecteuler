@@ -2,7 +2,7 @@ import time
 import math
 
 def main():
-    n = 63
+    n = 600851475143
 
     primefactor(n)
 
